@@ -1,0 +1,16 @@
+<body>
+    <pad>
+        <vc>
+            <formline text="Interface">
+                <textbox id="text" bind="IFACE" />
+            </formline>
+            <formline text="Downlink">
+                <textbox id="text" bind="DSPEED" />
+            </formline>
+            <formline text="Uplink">
+                <textbox id="text" bind="USPEED" />
+            </formline>
+						<button text="{Save}" id="save" icon="ok" />
+        </vc>
+    </pad>
+</body>
