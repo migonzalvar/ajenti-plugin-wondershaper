@@ -8,6 +8,7 @@ from ajenti.ui.binder import Binder
 
 @plugin
 class WonderShaper(SectionPlugin):
+    # default config could be overwitten on main config.json
     default_classconfig = {'path': '/etc/conf.d/wondershaper.conf'}
 
     def init(self):
