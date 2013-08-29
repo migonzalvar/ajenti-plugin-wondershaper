@@ -1,3 +1,5 @@
+import subprocess
+
 from reconfigure.configs import WonderShaperConfig
 
 from ajenti.api import plugin
@@ -33,3 +35,8 @@ class WonderShaper(SectionPlugin):
         self.binder.update()
         self.config.save()
         self.context.notify('info', 'Saved conf')
+        ret = subprocess.call(['systemctl', 'restart', 'wondershaper.service'])
+        if ret == 0:
+            self.context.notify('info', 'Reload service')
+        else:
+            self.context.notify('error', 'Error on reload service')
