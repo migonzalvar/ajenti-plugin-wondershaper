@@ -1,11 +1,11 @@
 import subprocess
 
-from reconfigure.configs import WonderShaperConfig
-
 from ajenti.api import plugin
 from ajenti.plugins.main.api import SectionPlugin
 from ajenti.ui import on
 from ajenti.ui.binder import Binder
+
+from .config import WonderShaperConfig
 
 
 @plugin
