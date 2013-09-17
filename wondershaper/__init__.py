@@ -1,5 +1,5 @@
-from ajenti.api import *
-from ajenti.plugins import *
+from ajenti.api import PluginInfo
+from ajenti.plugins import PluginDependency
 
 
 __version__ = "0.1.0"
