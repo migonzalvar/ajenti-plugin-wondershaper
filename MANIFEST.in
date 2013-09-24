@@ -1,0 +1,1 @@
+include requirements.txt wondershaper/*py wondershaper/layout/*xml
