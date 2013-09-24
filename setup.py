@@ -6,8 +6,8 @@ import os.path
 
 from setuptools import setup
 
-__version__ = "0.2.1"
 
+__version__ = "0.3"
 
 requires = [r.strip() for r in open('requirements.txt') if r]
 
